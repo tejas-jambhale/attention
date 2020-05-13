@@ -1,0 +1,184 @@
+.page-container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.page-container .course-container, .page-container .participants {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.page-container .video {
+  height: 70%;
+  width: 85%;
+  left: 50%;
+  top: 50px;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ECECEC;
+}
+
+.page-container .video .chat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
+  height: 100%;
+  opacity: 0.2;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.page-container .video .chat-container:hover {
+  opacity: 1;
+}
+
+.page-container .video .chat-form-container {
+  position: relative;
+  padding: 0 1em;
+}
+
+.page-container .video .chat-form-container input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.page-container .video .chat-form-container input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.page-container .video .chat-form-container input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.page-container .video .chat-form-container input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.page-container .video .chat-form-container input::placeholder {
+  font-style: italic;
+}
+
+.page-container .video .chat-form-container button {
+  outline: none;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #fff;
+  float: right;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.page-container .video .chat-form-container button:hover {
+  background-color: lightsteelblue;
+}
+
+.page-container .video .chat-messages::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.page-container .video .chat-messages {
+  margin: 20px;
+  height: 80%;
+  font-size: 13px;
+  overflow-y: scroll;
+}
+
+.page-container .video .chat-messages .message {
+  background-color: #fff;
+  border-radius: 20px 20px 0 20px;
+  padding: 1em;
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+
+.page-container .video .chat-messages .message p {
+  margin: 0;
+}
+
+.page-container .video .chat-messages .message .meta {
+  color: gray;
+  font-style: italic;
+}
+
+.page-container .video .chat-messages .message .text #text {
+  max-width: 268px;
+}
+
+.page-container .course-info {
+  position: relative;
+  top: 80px;
+  padding: 0 83px;
+}
+
+.page-container .course-info p {
+  font-size: 30px;
+}
+
+.page-container .participants {
+  padding: 20px 20px;
+  background-color: #ECECEC;
+  color: gray;
+}
+
+.page-container .participants h4 {
+  font-style: italic;
+}
+
+.page-container .participants ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-container .participants .button {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.page-container .participants .user-heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  margin-bottom: 20px;
+}
+
+.page-container .participants .chatUsers {
+  margin: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 23% 23% 23%;
+      grid-template-columns: 30% 23% 23% 23%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.page-container .participants .chatUsers button {
+  font-size: 11px;
+  outline: none;
+  padding: 8px;
+  float: right;
+  margin: 0 8px;
+}
+
+.page-container .participants .chatUsers li {
+  padding: 8px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="./js/a.js"></script> -->
+  <script src="https://appstatic.jeeliz.com/glanceTracker/jeelizGlanceTracker.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>ChatRoom</title>
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      </div>
+    </div>
+  </nav> -->
+  <!-- nav end -->
+
+  <div class="page-container">
+    <div class="course-container">
+      <div class="video">
+        <div class="chat-container">
+          <div class="chat-messages">
+          </div>
+          <div class="chat-form-container">
+            <form id="chat-form">
+              <input
+                id="msg"
+                type="text"
+                required
+                autocomplete="off"
+              />
+            </form>
+            <button class="raise-btn" style="margin-left: 10px!important;" onclick="raiseHand(event)"><i class="fal fa-hand-paper"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-info">
+        <p><b>Course Name |</b> <i>Chapter Name</i></p>
+        By Prof <b>Arul. Kumar</b>
+      </div>
+    </div>
+    <div class="participants">
+      <ul id="teacher"></ul>
+      <div class="user-heading">
+        <h4>Online Members •</h4>
+        <button class="button" style="font-size: 12px;"><i class="fas fa-volume"></i> Mute All</button>
+      </div>
+      <ul id="users">
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <h1 id="id01">Attention Monitoring demo</h1>
+   
+    <div id="chartContainer" style="height: 370px; width:100%;"> <div id="bchartContainer" style="height: 370px; width:100%;"><button onclick="showStats()">Show</button></div></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script><h2 id="listtitle" name="listtitle" style="color:black;"></h2> 
+<span id="dis0" style="color:black;"></span>
+<span id="dis1" style="color:black;"></span><span id="dis2" style="color:black;"></span><span id="dis3" style="color:black;"></span><span id="dis4" style="color:black;"></span>
+<br><br>
+<h2 id="listtitle1" name="listtitle1" style="color:black;"></h2> 
+<span id="display0" style="color:black;"></span>
+<span id="display1" style="color:black;"></span><span id="display2" style="color:black;"></span><span id="display3" style="color:black;"></span><span id="display4" style="color:black;"></span>
+<br><br>
+<span id="absent" style="color:black;"></span>
+<br><br>
+<span id="short" style="color:black;"></span>
+<br><br>
+<span id="long" style="color:black;"></span>
+<br><br>
+
+
+
+
+<ol id="top" style="color:black;">
+</ol>
+
+    <!-- <div id="registerfield"><input type="text" id="alli"><button onclick="myname()">Register</button></div> -->
+    <p id="urr">username1: </p>
+    
+    <p id="messages"></p>
+   <div class="teacher"></div>
+    <button onclick='toggle_glanceTracking(event)' id='toggleGlanceTracking'></button><br/>
+    <video class="localVideo" style="display: none;" playsinline autoplay muted></video>  
+      <div class="remoteVideos" id="thisi" style="display: none;"></div>
+      <script src='/socket.io/socket.io.js'></script>
+      <script src="/js/video.js"></script>
+    <div id='glanceTrackerCanvasContainer'>
+      <canvas id='glanceTrackerCanvas'></canvas>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  
+</body>
+</html>
