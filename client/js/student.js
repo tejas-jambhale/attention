@@ -258,17 +258,7 @@ window.onload = () => {
         }, 3000);  
         socket.on('chat message', function(msg){
           console.log(msg);
-          if (document.getElementsByClassName("teacher")[0].innerHTML == "<p>This is admin</p>"){
-            if (!connectedUsers.includes(msg.username)) {
-              connectedUsers.push(msg.username);
-              val.push(msg.yvalue);
-              uiii[msg.username] = 0;
-              var a=0;
-              var b=0;
-              newData.push({'type': "spline", 'showInLegend': true, 'name': msg.username, 'dataPoints': [],'average': a,'count':b})
-            } 
-            uiii[msg.username] = msg.yvalue;
-            //console.log(uiii,66)
-            }
+        
+            
         });
       });
