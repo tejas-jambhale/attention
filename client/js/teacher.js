@@ -258,7 +258,6 @@ window.onload = () => {
         }, 3000);  
         socket.on('chat message', function(msg){
           console.log(msg);
-          if (document.getElementsByClassName("teacher")[0].innerHTML == "<p>This is admin</p>"){
             if (!connectedUsers.includes(msg.username)) {
               connectedUsers.push(msg.username);
               val.push(msg.yvalue);
@@ -269,7 +268,7 @@ window.onload = () => {
             } 
             uiii[msg.username] = msg.yvalue;
             //console.log(uiii,66)
-            }
+            
         });
       });
 
@@ -411,7 +410,7 @@ console.log(duration1)
 //console.log(finalshort,11);
 //console.log(short,44);
 console.log(long,22);
-//console.log(top51,33);
+console.log(top51,33);
 
   document.getElementById("listtitle").innerHTML = "Least Attentive Students for 1min";
   document.getElementById('dis0').innerHTML = "<h2 style='color:black;'>1."+top51[0]["key"]+"</h2>";

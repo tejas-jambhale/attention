@@ -53,6 +53,9 @@ var admin = 0;
     if (localVideo instanceof HTMLVideoElement) {
       // @ts-ignore
       peerConnection.addStream(localVideo.srcObject);
+      if(type=="teacher"){
+        console.log("hi");
+      }
       if (admin == 0) {
         admin = 1;
         var para = document.createElement("P");               // Create a <p> element
