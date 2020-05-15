@@ -56,12 +56,7 @@ var admin = 0;
       if(type=="teacher"){
         console.log("hi");
       }
-      if (admin == 0) {
-        admin = 1;
-        var para = document.createElement("P");               // Create a <p> element
-        para.innerText = "This is admin";               // Insert text
-        Admin.appendChild(para);
-      }
+     
     }
     peerConnection.createOffer()
     .then(sdp => peerConnection.setLocalDescription(sdp))
